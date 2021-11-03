@@ -1,0 +1,19 @@
+// the syntax for this file is proto3
+syntax = "proto3";
+
+/*
+person is used to identify users
+ */
+message Person {
+
+  // the as as of the person's creations
+  int32 age = 1;
+  string firstName = 2;
+  string lastName = 3;
+  bytes profileImage = 4;
+  bool profileVerified = 5;
+
+  // height of the person
+  float height = 6;
+
+}
