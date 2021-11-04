@@ -1,5 +1,6 @@
 package io.dilankam.protobuffer;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +9,7 @@ public class ProtoBufferApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ProtoBufferApplication.class, args);
+
     }
 
 }
