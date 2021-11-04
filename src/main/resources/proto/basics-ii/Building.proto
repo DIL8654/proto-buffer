@@ -1,11 +1,11 @@
 
 syntax = "proto3";
 
-package exercise2;
+package building;
 import "proto/basics-ii/Street.proto";
 
 message Building{
   string buildingName = 1;
   string BuildingNumber = 2;
-  Street street = 3;
+  street.Street street = 3;
 }

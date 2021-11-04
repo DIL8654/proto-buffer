@@ -1,5 +1,5 @@
 syntax = "proto3";
-package exercise2;
+package city;
 message City{
   string name = 1;
   string zipCode = 2;
