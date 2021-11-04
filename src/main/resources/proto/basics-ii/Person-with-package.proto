@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+import "proto/basics-ii/Date-with-package.proto";
+package person;
+/*
+person is used to identify users
+ */
+message Person {
+
+  // the as as of the person's creations
+  int32 age = 1;
+  string firstName = 2;
+  string lastName = 3;
+  bytes profileImage = 4;
+  bool profileVerified = 5;
+
+  // height of the person
+  float height = 6;
+
+  enum EyeColor {
+    UNKNOWN = 0;
+    GREEN = 1;
+    BLUE = 2;
+    BROWN = 3;
+  }
+  EyeColor eye_Color = 7;
+
+  //  birth date
+  my.date.Date birthDate = 8;
+
+  message  Address
+  {
+    string line1 = 1;
+    string line2 = 2;
+    string zipcode = 3;
+    string city = 4;
+    string country = 5;
+  }
+  repeated Address addresses = 9;
+
+}
